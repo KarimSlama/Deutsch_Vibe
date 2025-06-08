@@ -9,6 +9,8 @@ import 'package:deutsch_vibe/core/theme/custom_themes/vibe_outlined_button_theme
 import 'package:deutsch_vibe/core/theme/custom_themes/vibe_text_field_theme.dart';
 import 'package:deutsch_vibe/core/theme/custom_themes/vibe_text_theme.dart';
 
+import '../constants/vibe_colors.dart';
+
 class VibeTheme {
   VibeTheme._();
 
@@ -18,8 +20,8 @@ class VibeTheme {
       brightness: Brightness.light,
       extensions: <ThemeExtension>[
         AppColors(
-          primary: Color(0xff4E4CFF),
-          secondary: Color(0xffB0FEB6),
+          primary: VibeColors.blue,
+          secondary: VibeColors.darkBlue,
         )
       ],
       scaffoldBackgroundColor: Colors.white,
@@ -38,8 +40,8 @@ class VibeTheme {
       brightness: Brightness.dark,
       extensions: <ThemeExtension>[
         AppColors(
-          primary: Color(0xff4E4CFF),
-          secondary: Color.fromARGB(255, 172, 172, 172),
+          primary: VibeColors.blue,
+          secondary: VibeColors.darkBlue,
         )
       ],
       scaffoldBackgroundColor: Colors.black,
@@ -51,35 +53,4 @@ class VibeTheme {
       outlinedButtonTheme: VibeOutlinedButtonTheme.darkOutlinedButtonTheme,
       elevatedButtonTheme: VibeElevatedButtonTheme.darkElevatedButtonTheme,
       inputDecorationTheme: VibeTextFieldTheme.darkInputDecorationTheme);
-/*
-  static ThemeData lightTheme = ThemeData(
-      useMaterial3: true,
-      fontFamily: 'Poppins',
-      brightness: Brightness.light,
-      primaryColor: Colors.blue,
-      scaffoldBackgroundColor: Colors.white,
-      textTheme: VibeTextTheme.lighTextTheme,
-      chipTheme: VibeChipTheme.lightChipThemeData,
-      appBarTheme: VibeAppbarTheme.lightAppbarTheme,
-      checkboxTheme: VibeCheckBoxTheme.lightCheckBoxTheme,
-      bottomSheetTheme: VibeBottomSheet.lightBottomSheetTheme,
-      outlinedButtonTheme: VibeOutlinedButtonTheme.lightOutlinedButtonTheme,
-      elevatedButtonTheme: VibeElevatedButtonTheme.lightElevatedButtonTheme,
-      inputDecorationTheme: VibeTextFieldTheme.lightInputDecorationTheme);
-
-  static ThemeData darkTheme = ThemeData(
-      useMaterial3: true,
-      fontFamily: 'Poppins',
-      brightness: Brightness.dark,
-      primaryColor: Colors.blue,
-      scaffoldBackgroundColor: Colors.black,
-      textTheme: VibeTextTheme.darkTextTheme,
-      chipTheme: VibeChipTheme.darkChipThemeData,
-      appBarTheme: VibeAppbarTheme.darkAppbarTheme,
-      checkboxTheme: VibeCheckBoxTheme.darkCheckBoxTheme,
-      bottomSheetTheme: VibeBottomSheet.darkBottomSheetTheme,
-      outlinedButtonTheme: VibeOutlinedButtonTheme.darkOutlinedButtonTheme,
-      elevatedButtonTheme: VibeElevatedButtonTheme.darkElevatedButtonTheme,
-      inputDecorationTheme: VibeTextFieldTheme.darkInputDecorationTheme);
-      */
 }
